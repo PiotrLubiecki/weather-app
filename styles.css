@@ -212,3 +212,7 @@ footer {
 footer span {
     margin: 0 15px 0 15px;
 }
+
+.invisible {
+    visibility: hidden;
+}
