@@ -4,7 +4,7 @@ const weatherData = (() => {
         const tempDiv = document.querySelector('#temperature');
         const weatherDesc = document.querySelector('#weather-desc');
         try {
-            const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=4deeb2927ba731c378159029900bed51`, {mode: 'cors'})
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=4deeb2927ba731c378159029900bed51`, {mode: 'cors'})
             const cityData = await response.json();
             if (currentCity.classList.contains('invisible')){
                 currentCity.classList.remove('invisible');
